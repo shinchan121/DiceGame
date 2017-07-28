@@ -29,20 +29,16 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    setContract();
+
 
     $("#roll-dice").click(function () {
         startGame();
     });
 
-    $("#confirm").click(function () {
-        Confirm();
-    });
 
     $(".toggle-bg").click(function () {
-        setContract();
+        start();
         getAllLogs();
-        getContractBalance();
     });
 
     $('#your-balance').click(function () {
